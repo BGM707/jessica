@@ -2,11 +2,10 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Promo Peluquería</title>
+    <title>Peluquería – Reserva de Hora</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-        /* Página 1:1 */
         html,
         body {
             margin: 0;
@@ -24,67 +23,106 @@
             width: 100vmin;
             height: 100vmin;
             background: #fff;
-            border-radius: 16px;
+            border-radius: 18px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             text-align: center;
-            padding: 20px;
+            padding: 30px 25px;
             box-sizing: border-box;
         }
 
         h1 {
             margin: 0;
-            font-size: 2.2em;
+            font-size: 2.4em;
+        }
+
+        .location {
+            margin-top: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #444;
         }
 
         .promo {
-            margin: 15px 0;
-            font-size: 1.2em;
+            margin: 18px 0;
+            font-size: 1.4em;
             font-weight: bold;
-            color: #d32f2f;
+            color: #c62828;
         }
 
         .text {
-            font-size: 1em;
-            margin-bottom: 20px;
+            font-size: 1.05em;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        .phone {
+            font-size: 1.6em;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #000;
+        }
+
+        .hint {
+            font-size: 0.95em;
+            color: #555;
+            margin-bottom: 15px;
         }
 
         img {
-            width: 220px;
-            height: 220px;
+            width: 230px;
+            height: 230px;
         }
 
         .footer {
+            font-size: 0.95em;
+            color: #333;
+            border-top: 1px dashed #ccc;
+            padding-top: 12px;
             margin-top: 15px;
-            font-size: 0.9em;
-            color: #555;
         }
     </style>
 </head>
 
 <body>
     <div class="square">
-        <h1>💈 Peluquería</h1>
+        <div>
+            <h1>💈 PELUQUERÍA</h1>
+            <div class="location">
+                Saltos del Laja – Sector El Litre
+            </div>
 
-        <div class="promo">
-            SALTOS DEL LAJA SECTOR EL LITRE
+            <div class="promo">
+                Corte de pelo con atención directa
+            </div>
+
+            <div class="text">
+                Para reservar su hora puede:<br>
+                📞 Llamar por teléfono<br>
+                💬 Enviar un WhatsApp<br>
+                📷 O escanear el código QR
+            </div>
+
+            <div class="phone">
+                📱 +56 9 6284 4716
+            </div>
+
+            <div class="hint">
+                (Si no usa WhatsApp, puede llamar sin problema)
+            </div>
         </div>
 
-        <div class="text">
-            Escanea el código QR para enviar un mensaje<br>
-            y reservar tu hora por WhatsApp
-        </div>
-
-        <!-- QR con mensaje predeterminado -->
+        <!-- QR -->
         <img
             src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://wa.me/56962844716?text=Hola%20quiero%20una%20reserva%20de%20hora%20para%20peluqueria"
             alt="QR WhatsApp Reserva"
         >
 
         <div class="footer">
-            Atención rápida y directa 📲
+            Atención cercana, rápida y de confianza ✂️<br>
+            ¡Pregunte con confianza!
         </div>
     </div>
 </body>
