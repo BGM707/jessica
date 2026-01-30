@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Promo Peluquería</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* Página 1:1 */
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: #111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .square {
+            width: 100vmin;
+            height: 100vmin;
+            background: #fff;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+
+        .promo {
+            margin: 15px 0;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #d32f2f;
+        }
+
+        .text {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 220px;
+            height: 220px;
+        }
+
+        .footer {
+            margin-top: 15px;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="square">
+        <h1>💈 Peluquería</h1>
+
+        <div class="promo">
+            PROMOCIÓN ESPECIAL
+        </div>
+
+        <div class="text">
+            Escanea el código QR para enviar un mensaje<br>
+            y reservar tu hora por WhatsApp
+        </div>
+
+        <!-- QR con mensaje predeterminado -->
+        <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://wa.me/56962844716?text=Hola%20quiero%20una%20reserva%20de%20hora%20para%20peluqueria"
+            alt="QR WhatsApp Reserva"
+        >
+
+        <div class="footer">
+            Atención rápida y directa 📲
+        </div>
+    </div>
+</body>
+</html>
