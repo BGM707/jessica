@@ -1,129 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Peluquería – Reserva de Hora</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Peluquería – Reserva</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            background: #111;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-        .square {
-            width: 100vmin;
-            height: 100vmin;
-            background: #fff;
-            border-radius: 18px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            text-align: center;
-            padding: 30px 25px;
-            box-sizing: border-box;
-        }
+/* CONTENEDOR 1:1 */
+.square {
+    width: min(100vmin, 100%);
+    height: min(100vmin, 100%);
+    background: #fff;
+    border-radius: 18px;
+    padding: 5vmin;
+    box-sizing: border-box;
 
-        h1 {
-            margin: 0;
-            font-size: 2.4em;
-        }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
 
-        .location {
-            margin-top: 8px;
-            font-size: 1.1em;
-            font-weight: bold;
-            color: #444;
-        }
+/* TEXTOS */
+h1 {
+    font-size: clamp(1.6em, 4vmin, 2.4em);
+    margin: 0;
+}
 
-        .promo {
-            margin: 18px 0;
-            font-size: 1.4em;
-            font-weight: bold;
-            color: #c62828;
-        }
+.location {
+    font-size: clamp(0.9em, 2.2vmin, 1.1em);
+    font-weight: bold;
+    margin-top: 0.5em;
+}
 
-        .text {
-            font-size: 1.05em;
-            line-height: 1.4;
-            margin-bottom: 15px;
-        }
+.promo {
+    font-size: clamp(1.1em, 2.8vmin, 1.4em);
+    font-weight: bold;
+    color: #c62828;
+    margin: 1em 0;
+}
 
-        .phone {
-            font-size: 1.6em;
-            font-weight: bold;
-            margin: 10px 0;
-            color: #000;
-        }
+.text {
+    font-size: clamp(0.9em, 2.2vmin, 1.05em);
+    line-height: 1.4;
+}
 
-        .hint {
-            font-size: 0.95em;
-            color: #555;
-            margin-bottom: 15px;
-        }
+.phone {
+    font-size: clamp(1.3em, 3.2vmin, 1.7em);
+    font-weight: bold;
+    margin: 0.6em 0;
+}
 
-        img {
-            width: 230px;
-            height: 230px;
-        }
+.hint {
+    font-size: clamp(0.8em, 2vmin, 0.95em);
+    color: #555;
+}
 
-        .footer {
-            font-size: 0.95em;
-            color: #333;
-            border-top: 1px dashed #ccc;
-            padding-top: 12px;
-            margin-top: 15px;
-        }
-    </style>
+/* QR */
+.qr {
+    width: 35vmin;
+    max-width: 220px;
+    aspect-ratio: 1 / 1;
+}
+
+.footer {
+    font-size: clamp(0.8em, 2vmin, 0.95em);
+    border-top: 1px dashed #ccc;
+    padding-top: 0.8em;
+    margin-top: 0.8em;
+}
+</style>
 </head>
 
 <body>
-    <div class="square">
-        <div>
-            <h1>💈 PELUQUERÍA</h1>
-            <div class="location">
-                Saltos del Laja – Sector El Litre
-            </div>
+<div class="square">
 
-            <div class="promo">
-                Corte de pelo con atención directa
-            </div>
+    <div>
+        <h1>💈 PELUQUERÍA</h1>
+        <div class="location">Saltos del Laja – Sector El Litre</div>
 
-            <div class="text">
-                Para reservar su hora puede:<br>
-                📞 Llamar por teléfono<br>
-                💬 Enviar un WhatsApp<br>
-                📷 O escanear el código QR
-            </div>
-
-            <div class="phone">
-                📱 +56 9 6284 4716
-            </div>
-
-            <div class="hint">
-                (Si no usa WhatsApp, puede llamar sin problema)
-            </div>
+        <div class="promo">
+            Atención directa – Reserve su hora
         </div>
 
-        <!-- QR -->
-        <img
-            src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://wa.me/56962844716?text=Hola%20quiero%20una%20reserva%20de%20hora%20para%20peluqueria"
-            alt="QR WhatsApp Reserva"
-        >
+        <div class="text">
+            Puede reservar de tres formas:<br>
+            📞 Llamando por teléfono<br>
+            💬 Enviando WhatsApp<br>
+            📷 Escaneando el código
+        </div>
 
-        <div class="footer">
-            Atención cercana, rápida y de confianza ✂️<br>
-            ¡Pregunte con confianza!
+        <div class="phone">
+            📱 +56 9 6284 4716
+        </div>
+
+        <div class="hint">
+            (Si no usa WhatsApp, puede llamar)
         </div>
     </div>
+
+    <img class="qr"
+        src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://wa.me/56962844716?text=Hola%20quiero%20una%20reserva%20de%20hora%20para%20peluqueria"
+        alt="QR WhatsApp">
+
+    <div class="footer">
+        Atención cercana y de confianza ✂️
+    </div>
+
+</div>
 </body>
 </html>
